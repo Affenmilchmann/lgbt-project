@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<!-- saved from url=(0224)file:///home/ivan/Documents/%D0%9C%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D1%8B/%D0%A6%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%B3%D1%80%D0%B0%D0%BC%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D1%82%D1%8C/lgbt-project/Chart.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>chart created with amCharts | amCharts</title>
+		<meta name="description" content="chart created using amCharts live editor">
+		
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="./chart_files/amcharts.js"></script>
+		<script type="text/javascript" src="./chart_files/pie.js"></script>
+		<script type="text/javascript" src="./chart_files/black.js"></script>
+		<script type="text/javascript" src="./chart_files/serial.js"></script>
+	</head>
+	<body style="padding:0px">
+		<h2 align="center">Я...</h2>
+		<div id="pie1" onauxclick="pie1()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		<h2 align="center">Возраст</h2>
+		<div id="bar1" onauxclick="bar1()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		<h2 align="center">Считаете ли вы себя представителем ЛГБТ+ сообщества?</h2>
+		<div id="pie2" onauxclick="pie2()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		<h2 align="center">Существует только два гендера?</h2>
+		<div id="pie3" onauxclick="pie3()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		<h2 align="center">Что вы думаете о людях, выносящих себя за рамки двух гендеров?</h2>
+		<div id="pie4" onauxclick="pie4()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		<h2 align="center">Можно ли таким людям проявлять свою ориентацию на публике в России?</h2>
+		<div id="pie5" onauxclick="pie5()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		<h2 align="center">Нужно ли в России разрешить браки между любыми совершеннолетними людьми?</h2>
+		<div id="pie6" onauxclick="pie6()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		<h2 align="center">Нужно ли в России разрешить усыновление приемных детей любыми семейными парами?</h2>
+		<div id="pie7" onauxclick="pie7()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+	
+	
+	<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			
+			
+			function bar1()
+			{
+			AmCharts.makeChart("bar1",
+				{
+					"type": "serial",
+					"categoryField": "category",
+					"colors": [
+						"#FFAB00",
+						"#FCD202",
+						"#B0DE09",
+						"#0D8ECF",
+						"#2A0CD0",
+						"#CD0D74",
+						"#CC0000",
+						"#00CC00",
+						"#0000CC",
+						"#DDDDDD",
+						"#999999",
+						"#333333",
+						"#990000"
+					],
+					"startDuration": 1,
+					"categoryAxis": {
+						"gridPosition": "start"
+					},
+					"chartCursor": {
+						"enabled": true
+					},
+					"chartScrollbar": {
+						"enabled": true
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"fillAlphas": 1,
+							"id": "AmGraph-1",
+							"title": "graph 1",
+							"type": "column",
+							"valueField": "column-1"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"id": "ValueAxis-1",
+							"title": "Axis title"
+						}
+					],
+					"allLabels": [],
+					"balloon": {},
+					"titles": [
+						{
+							"id": "Title-1",
+							"size": 15,
+							"text": "Chart Title"
+						}
+					],
+					"dataProvider": [
+						{
+							"category": "<17",
+							"column-1": "4"
+						},
+						{
+							"category": "17",
+							"column-1": "26"
+						},
+						{
+							"category": "18",
+							"column-1": "70"
+						},
+						{
+							"category": "19",
+							"column-1": "12"
+						},
+						{
+							"category": "20",
+							"column-1": "3"
+						},
+						{
+							"category": "20+",
+							"column-1": "17"
+						}
+					]
+				}
+			);	
+			}
+			
+			function pie1() {
+				AmCharts.makeChart("pie1",
+				{
+					"type": "pie",
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"colors": [
+						"#01939A",
+						"#ffab00",
+						"#ff7600",
+						"#123eab",
+						"#F8FF01",
+						"#B0DE09",
+						"#04D215",
+						"#0D8ECF",
+						"#0D52D1",
+						"#2A0CD0",
+						"#8A0CCF",
+						"#CD0D74",
+						"#754DEB",
+						"#DDDDDD",
+						"#999999",
+						"#333333",
+						"#000000",
+						"#57032A",
+						"#CA9726",
+						"#990000",
+						"#4B0C25"
+					],
+					"titleField": "category",
+					"valueField": "column-1",
+					"fontSize": 18,
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"align": "center",
+						"markerType": "circle"
+					},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "Парень",
+							"column-1": "27"
+						},
+						{
+							"category": "Девушка",
+							"column-1": "98"
+						},
+						{
+							"category": "Воздержались",
+							"column-1": "4"
+						},
+						{
+							"category": "Другое",
+							"column-1": "5"
+						}
+					]
+				}
+			);
+			}
+			
+			function pie2(){
+				AmCharts.makeChart("pie2",
+				{
+					"type": "pie",
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"colors": [
+						"#01939A",
+						"#ffab00",
+						"#ff7600",
+						"#123eab",
+						"#F8FF01",
+						"#B0DE09",
+						"#04D215",
+						"#0D8ECF",
+						"#0D52D1",
+						"#2A0CD0",
+						"#8A0CCF",
+						"#CD0D74",
+						"#754DEB",
+						"#DDDDDD",
+						"#999999",
+						"#333333",
+						"#000000",
+						"#57032A",
+						"#CA9726",
+						"#990000",
+						"#4B0C25"
+					],
+					"hoverAlpha": 1.0,
+					"titleField": "category",
+					"valueField": "column-1",
+					"fontSize": 18,
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"align": "center",
+						"markerType": "circle"
+					},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "Нет",
+							"column-1": "66"
+						},
+						{
+							"category": "Да",
+							"column-1": "62"
+						},
+						{
+							"category": "Воздержались",
+							"column-1": "1"
+						},
+						{
+							"category": "Не определились",
+							"column-1": "5"
+						}
+					]
+				}
+			);
+			}
+			
+			function pie3()
+			{
+			AmCharts.makeChart("pie3",
+				{
+					"type": "pie",
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"colors": [
+						"#01939A",
+						"#ffab00",
+						"#ff7600",
+						"#123eab",
+						"#F8FF01",
+						"#B0DE09",
+						"#04D215",
+						"#0D8ECF",
+						"#0D52D1",
+						"#2A0CD0",
+						"#8A0CCF",
+						"#CD0D74",
+						"#754DEB",
+						"#DDDDDD",
+						"#999999",
+						"#333333",
+						"#000000",
+						"#57032A",
+						"#CA9726",
+						"#990000",
+						"#4B0C25"
+					],
+					"titleField": "category",
+					"valueField": "column-1",
+					"fontSize": 18,
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"align": "center",
+						"markerType": "circle"
+					},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "Больше",
+							"column-1": "60"
+						},
+						{
+							"category": "Только два",
+							"column-1": "30"
+						},
+						{
+							"category": "Не знаю, что это",
+							"column-1": "4"
+						},
+						{
+							"category": "Знаю, что это, но затрудняюсь",
+							"column-1": "29"
+						}
+					]
+				}
+			);	
+			}
+			
+			function pie4()
+			{
+			AmCharts.makeChart("pie4",
+				{
+					"type": "pie",
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"colors": [
+						"#01939A",
+						"#ffab00",
+						"#ff7600",
+						"#123eab",
+						"#F8FF01",
+						"#B0DE09",
+						"#04D215",
+						"#0D8ECF",
+						"#0D52D1",
+						"#2A0CD0",
+						"#8A0CCF",
+						"#CD0D74",
+						"#754DEB",
+						"#DDDDDD",
+						"#999999",
+						"#333333",
+						"#000000",
+						"#57032A",
+						"#CA9726",
+						"#990000",
+						"#4B0C25"
+					],
+					"titleField": "category",
+					"valueField": "column-1",
+					"fontSize": 18,
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"align": "center",
+						"markerType": "circle"
+					},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "Отношусь положительно",
+							"column-1": "33"
+						},
+						{
+							"category": "Мне без разницы",
+							"column-1": "81"
+						},
+						{
+							"category": "Это неправильно",
+							"column-1": "10"
+						}
+					]
+				}
+			);	
+			}
+			
+			function pie5()
+			{
+			AmCharts.makeChart("pie5",
+				{
+					"type": "pie",
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"colors": [
+						"#01939A",
+						"#ffab00",
+						"#ff7600",
+						"#123eab",
+						"#F8FF01",
+						"#B0DE09",
+						"#04D215",
+						"#0D8ECF",
+						"#0D52D1",
+						"#2A0CD0",
+						"#8A0CCF",
+						"#CD0D74",
+						"#754DEB",
+						"#DDDDDD",
+						"#999999",
+						"#333333",
+						"#000000",
+						"#57032A",
+						"#CA9726",
+						"#990000",
+						"#4B0C25"
+					],
+					"titleField": "category",
+					"valueField": "column-1",
+					"fontSize": 18,
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"align": "center",
+						"markerType": "circle"
+					},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "Да",
+							"column-1": "52"
+						},
+						{
+							"category": "На публике это опасно",
+							"column-1": "42"
+						},
+						{
+							"category": "На публике это неприемлемо",
+							"column-1": "11"
+						},
+						{
+							"category": "Без разницы",
+							"column-1": "25"
+						}
+					]
+				}
+			);	
+			}
+			
+			function pie6()
+			{
+			AmCharts.makeChart("pie6",
+				{
+					"type": "pie",
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"colors": [
+						"#01939A",
+						"#ffab00",
+						"#ff7600",
+						"#123eab",
+						"#F8FF01",
+						"#B0DE09",
+						"#04D215",
+						"#0D8ECF",
+						"#0D52D1",
+						"#2A0CD0",
+						"#8A0CCF",
+						"#CD0D74",
+						"#754DEB",
+						"#DDDDDD",
+						"#999999",
+						"#333333",
+						"#000000",
+						"#57032A",
+						"#CA9726",
+						"#990000",
+						"#4B0C25"
+					],
+					"titleField": "category",
+					"valueField": "column-1",
+					"fontSize": 18,
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"align": "center",
+						"markerType": "circle"
+					},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "Да",
+							"column-1": "115"
+						},
+						{
+							"category": "Нет",
+							"column-1": "12"
+						},
+						{
+							"category": "Браки надо отменить",
+							"column-1": "5"
+						}
+					]
+				}
+			);	
+			}
+			
+			function pie7()
+			{
+			AmCharts.makeChart("pie7",
+				{
+					"type": "pie",
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"colors": [
+						"#01939A",
+						"#ffab00",
+						"#ff7600",
+						"#123EAB",
+						"#F8FF01",
+						"#B0DE09",
+						"#04D215",
+						"#0D8ECF",
+						"#0D52D1",
+						"#2A0CD0",
+						"#8A0CCF",
+						"#CD0D74",
+						"#754DEB",
+						"#DDDDDD",
+						"#999999",
+						"#333333",
+						"#000000",
+						"#57032A",
+						"#CA9726",
+						"#990000",
+						"#4B0C25"
+					],
+					"titleField": "category",
+					"valueField": "column-1",
+					"fontSize": 15,
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"align": "center",
+						"markerType": "circle"
+					},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "Да",
+							"column-1": "111"
+						},
+						{
+							"category": "Нет",
+							"column-1": "16"
+						}
+					]
+				}
+			);	
+			}
+		</script>
+	
+</body></html>
