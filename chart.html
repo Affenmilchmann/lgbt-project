@@ -27,6 +27,10 @@
 		<div id="pie6" onauxclick="pie6()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
 		<h2 align="center">Нужно ли в России разрешить усыновление приемных детей любыми семейными парами?</h2>
 		<div id="pie7" onauxclick="pie7()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		<h2 align="center">Считаете ли вы, что у мужчин в России больше возможностей, чем у женщин?</h2>
+		<div id="pie8" onauxclick="pie8()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		<h2 align="center">Считаете ли вы, что у женщин в России больше возможностей, чем у мужчин?</h2>
+		<div id="pie9" onauxclick="pie9()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
 	
 	
 	<!-- amCharts javascript code -->
@@ -169,7 +173,7 @@
 							"column-1": "98"
 						},
 						{
-							"category": "Воздержались",
+							"category": "Воздержусь",
 							"column-1": "4"
 						},
 						{
@@ -514,7 +518,7 @@
 					],
 					"titleField": "category",
 					"valueField": "column-1",
-					"fontSize": 15,
+					"fontSize": 18,
 					"allLabels": [],
 					"balloon": {},
 					"legend": {
@@ -531,6 +535,130 @@
 						{
 							"category": "Нет",
 							"column-1": "16"
+						}
+					]
+				}
+			);	
+			}
+			
+			function pie8()
+			{
+			AmCharts.makeChart("pie8",
+				{
+					"type": "pie",
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"colors": [
+						"#01939A",
+						"#ffab00",
+						"#ff7600",
+						"#123eab",
+						"#F8FF01",
+						"#B0DE09",
+						"#04D215",
+						"#0D8ECF",
+						"#0D52D1",
+						"#2A0CD0",
+						"#8A0CCF",
+						"#CD0D74",
+						"#754DEB",
+						"#DDDDDD",
+						"#999999",
+						"#333333",
+						"#000000",
+						"#57032A",
+						"#CA9726",
+						"#990000",
+						"#4B0C25"
+					],
+					"titleField": "category",
+					"valueField": "column-1",
+					"fontSize": 18,
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"align": "center",
+						"markerType": "circle"
+					},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "Да, во всех сферах",
+							"column-1": "25"
+						},
+						{
+							"category": "Да, в некоторых сверах",
+							"column-1": "79"
+						},
+						{
+							"category": "Нет",
+							"column-1": "26"
+						},
+						{
+							"category": "Одинаково",
+							"column-1": "2"
+						}
+					]
+				}
+			);	
+			}
+			
+			function pie9()
+			{
+			AmCharts.makeChart("pie9",
+				{
+					"type": "pie",
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"colors": [
+						"#01939A",
+						"#ffab00",
+						"#ff7600",
+						"#123eab",
+						"#F8FF01",
+						"#B0DE09",
+						"#04D215",
+						"#0D8ECF",
+						"#0D52D1",
+						"#2A0CD0",
+						"#8A0CCF",
+						"#CD0D74",
+						"#754DEB",
+						"#DDDDDD",
+						"#999999",
+						"#333333",
+						"#000000",
+						"#57032A",
+						"#CA9726",
+						"#990000",
+						"#4B0C25"
+					],
+					"titleField": "category",
+					"valueField": "column-1",
+					"fontSize": 18,
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"align": "center",
+						"markerType": "circle"
+					},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "Да, во всех сферах",
+							"column-1": "3"
+						},
+						{
+							"category": "Да, в некоторых сферах",
+							"column-1": "46"
+						},
+						{
+							"category": "Нет",
+							"column-1": "80"
+						},
+						{
+							"category": "Одинаково",
+							"column-1": "2"
 						}
 					]
 				}
