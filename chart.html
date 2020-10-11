@@ -9,29 +9,108 @@
 		<script type="text/javascript" src="./chart_files/pie.js"></script>
 		<script type="text/javascript" src="./chart_files/black.js"></script>
 		<script type="text/javascript" src="./chart_files/serial.js"></script>
-	</head>
-	<body style="padding:0px">
-		<h2 align="center">Я...</h2>
-		<div id="pie1" onauxclick="pie1()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
-		<h2 align="center">Возраст</h2>
-		<div id="bar1" onauxclick="bar1()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
-		<h2 align="center">Считаете ли вы себя представителем ЛГБТ+ сообщества?</h2>
-		<div id="pie2" onauxclick="pie2()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
-		<h2 align="center">Существует только два гендера?</h2>
-		<div id="pie3" onauxclick="pie3()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
-		<h2 align="center">Что вы думаете о людях, выносящих себя за рамки двух гендеров?</h2>
-		<div id="pie4" onauxclick="pie4()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
-		<h2 align="center">Можно ли таким людям проявлять свою ориентацию на публике в России?</h2>
-		<div id="pie5" onauxclick="pie5()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
-		<h2 align="center">Нужно ли в России разрешить браки между любыми совершеннолетними людьми?</h2>
-		<div id="pie6" onauxclick="pie6()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
-		<h2 align="center">Нужно ли в России разрешить усыновление приемных детей любыми семейными парами?</h2>
-		<div id="pie7" onauxclick="pie7()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
-		<h2 align="center">Считаете ли вы, что у мужчин в России больше возможностей, чем у женщин?</h2>
-		<div id="pie8" onauxclick="pie8()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
-		<h2 align="center">Считаете ли вы, что у женщин в России больше возможностей, чем у мужчин?</h2>
-		<div id="pie9" onauxclick="pie9()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
 	
+		<style>
+			@font-face {
+				font-family: "Roboto Font";
+				src: url(Roboto-Thin.ttf) format("truetype");
+			}
+			h2 { 
+				font-family: "Roboto Font", Verdana, Tahoma;
+				font-size:30pt;
+				width:100%;
+			}
+			h1 {
+				color:white;	
+			}
+			.left_menu {
+				float:left;
+				width:50%;
+			}
+			.middle_menu {
+				float:left;
+				width:50%;
+				height: 400px;
+			}
+			img {
+				visibility: hidden;	
+			}
+		</style>
+	</head>
+	<body style="padding:0px; margin:0px;">
+		<h2 style="background-color:#ff6a6a;" align="center">Я...</h2>
+		<div id="pie1" onauxclick="pie1()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		
+		<h2 style="background-color:#ffa66a;" align="center">Возраст</h2>
+		<div id="bar1" onauxclick="bar1()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		
+		<h2 style="background-color:#ffe26a;" align="center">Считаете ли вы себя представителем ЛГБТ+ сообщества?</h2>
+		
+		<section class="left_menu">
+			<div id="pie2" onauxclick="pie2()" style="height: 400px; background-color: #FFFFFF;"></div>
+		</section>
+		<section class="middle_menu">
+			<img id="1" src="1.png">
+		</section>
+		<h1>.</h1>
+		
+		<h2 style="background-color:#8dff6a;" align="center">Существует только два гендера?</h2>
+		<section class="left_menu">
+			<div id="pie3" onauxclick="pie3()" style="height: 400px; background-color: #FFFFFF;"></div>
+		</section>
+		<section class="middle_menu">
+			<img id="2" src="2.png">
+		</section>
+		<h1>.</h1>
+		
+		<h2 style="background-color:#6aa1ff;" align="center">Что вы думаете о людях, выносящих себя за рамки двух гендеров?</h2>
+		<section class="left_menu">
+			<div id="pie4" onauxclick="pie4()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		</section>
+		<section class="middle_menu">
+			<img id="3" src="3.png">
+		</section>
+		<h1>.</h1>
+		
+		<h2 style="background-color:#9c6aff;" align="center">Можно ли таким людям проявлять свою ориентацию на публике в России?</h2>
+		<div id="pie5" onauxclick="pie5()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		
+		
+		
+		
+		
+		<h2 style="background-color:#ff6a6a;" align="center">Нужно ли в России разрешить браки между любыми совершеннолетними людьми?</h2>
+		<div id="pie6" onauxclick="pie6()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		
+		<h2 style="background-color:#ffa66a;" align="center">Нужно ли в России разрешить усыновление приемных детей любыми семейными парами?</h2>
+		<div id="pie7" onauxclick="pie7()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		
+		<h2 style="background-color:#ffe26a;" align="center">Считаете ли вы, что у мужчин в России больше возможностей, чем у женщин?</h2>
+		<section class="left_menu">
+			<div id="pie8" onauxclick="pie8()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		</section>
+		<section class="middle_menu">
+			<img id="4" src="4.png">
+		</section>
+		<h1>.</h1>
+		
+		<h2 style="background-color:#8dff6a;" align="center">Считаете ли вы, что у женщин в России больше возможностей, чем у мужчин?</h2>
+		<section class="left_menu">
+			<div id="pie9" onauxclick="pie9()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		</section>
+		<section class="middle_menu">
+			<img id="5" src="5.png">
+		</section>
+		<h1>.</h1>
+		
+		<h2 style="background-color:#6aa1ff;" align="center">Считаете ли вы ситуацию, когда мужчина в семье работает, а женщина хозяйничает дома, сидит с детьми приемлемой?</h2>
+		<div id="pie10" onauxclick="pie10()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		
+		<h2 style="background-color:#9c6aff;" align="center">А приемлема ли ситуация, когда оба супруга работают и вносят сравнимый вклад в семейный бюджет?</h2>
+		<div id="pie11" onauxclick="pie11()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+		
+		<h2 style="background-color:#ff6a6a;" align="center">А что насчет ситуации, когда муж хозяйничает дома, а жена работает?</h2>
+		<div id="pie12" onauxclick="pie12()" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
 	
 	<!-- amCharts javascript code -->
 		<script type="text/javascript">
@@ -186,6 +265,7 @@
 			}
 			
 			function pie2(){
+				document.getElementById("1").style.visibility = "visible";
 				AmCharts.makeChart("pie2",
 				{
 					"type": "pie",
@@ -249,6 +329,7 @@
 			
 			function pie3()
 			{
+			document.getElementById("2").style.visibility = "visible";
 			AmCharts.makeChart("pie3",
 				{
 					"type": "pie",
@@ -311,6 +392,7 @@
 			
 			function pie4()
 			{
+			document.getElementById("3").style.visibility = "visible";
 			AmCharts.makeChart("pie4",
 				{
 					"type": "pie",
@@ -543,6 +625,7 @@
 			
 			function pie8()
 			{
+			document.getElementById("4").style.visibility = "visible";
 			AmCharts.makeChart("pie8",
 				{
 					"type": "pie",
@@ -605,6 +688,7 @@
 			
 			function pie9()
 			{
+			document.getElementById("5").style.visibility = "visible";
 			AmCharts.makeChart("pie9",
 				{
 					"type": "pie",
@@ -664,6 +748,169 @@
 				}
 			);	
 			}
+			
+			function pie10()
+			{
+			AmCharts.makeChart("pie10",
+				{
+					"type": "pie",
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"colors": [
+						"#ffab00",
+						"#01939A",
+						"#ff7600",
+						"#123eab",
+						"#F8FF01",
+						"#B0DE09",
+						"#04D215",
+						"#0D8ECF",
+						"#0D52D1",
+						"#2A0CD0",
+						"#8A0CCF",
+						"#CD0D74",
+						"#754DEB",
+						"#DDDDDD",
+						"#999999",
+						"#333333",
+						"#000000",
+						"#57032A",
+						"#CA9726",
+						"#990000",
+						"#4B0C25"
+					],
+					"titleField": "category",
+					"valueField": "column-1",
+					"fontSize": 18,
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"align": "center",
+						"markerType": "circle"
+					},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "Да",
+							"column-1": "128"
+						},
+						{
+							"category": "Нет",
+							"column-1": "5"
+						}
+					]
+				}
+			);	
+			}
+			
+			function pie11()
+			{
+			AmCharts.makeChart("pie11",
+				{
+					"type": "pie",
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"colors": [
+						"#ffab00",
+						"#01939A",
+						"#ff7600",
+						"#123eab",
+						"#F8FF01",
+						"#B0DE09",
+						"#04D215",
+						"#0D8ECF",
+						"#0D52D1",
+						"#2A0CD0",
+						"#8A0CCF",
+						"#CD0D74",
+						"#754DEB",
+						"#DDDDDD",
+						"#999999",
+						"#333333",
+						"#000000",
+						"#57032A",
+						"#CA9726",
+						"#990000",
+						"#4B0C25"
+					],
+					"titleField": "category",
+					"valueField": "column-1",
+					"fontSize": 18,
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"align": "center",
+						"markerType": "circle"
+					},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "Да",
+							"column-1": "132"
+						},
+						{
+							"category": "Нет",
+							"column-1": "1"
+						}
+					]
+				}
+			);	
+			}
+			
+			function pie12()
+			{
+			AmCharts.makeChart("pie12",
+				{
+					"type": "pie",
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"colors": [
+						"#ffab00",
+						"#01939A",
+						"#ff7600",
+						"#123eab",
+						"#F8FF01",
+						"#B0DE09",
+						"#04D215",
+						"#0D8ECF",
+						"#0D52D1",
+						"#2A0CD0",
+						"#8A0CCF",
+						"#CD0D74",
+						"#754DEB",
+						"#DDDDDD",
+						"#999999",
+						"#333333",
+						"#000000",
+						"#57032A",
+						"#CA9726",
+						"#990000",
+						"#4B0C25"
+					],
+					"titleField": "category",
+					"valueField": "column-1",
+					"fontSize": 18,
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"align": "center",
+						"markerType": "circle"
+					},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "Да",
+							"column-1": "124"
+						},
+						{
+							"category": "Нет",
+							"column-1": "9"
+						}
+					]
+				}
+			);	
+			}
+			
 		</script>
 	
 </body></html>
